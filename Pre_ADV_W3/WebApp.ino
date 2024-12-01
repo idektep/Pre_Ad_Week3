@@ -73,7 +73,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
         <td style="text-align:left;font-size:25px"><b>Wrist_rotation:</b></td>
         <td colspan=2>
          <div class="slidecontainer">
-            <input type="range" min="0" max="180" value="90" class="slider" id="Wrist_rotation" oninput='sendButtonInput("Wrist_rotation",value)'>
+            <input type="range" min="0" max="180" value="90" class="slider" id="_______" oninput='sendButtonInput("_______",value)'>
           </div>
         </td>
       </tr> 
@@ -82,7 +82,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
         <td style="text-align:left;font-size:25px"><b>Elbow:</b></td>
         <td colspan=2>
          <div class="slidecontainer">
-            <input type="range" min="0" max="180" value="90" class="slider" id="Elbow" oninput='sendButtonInput("Elbow",value)'>
+            <input type="range" min="0" max="180" value="90" class="slider" id="_______" oninput='sendButtonInput("_______",value)'>
           </div>
         </td>
       </tr> 
@@ -246,10 +246,10 @@ void onRobotArmInputWebSocketEvent(AsyncWebSocket *server,
         else if (key == "Shoulder") {
           writeServoValues(1, valueInt);           
         } 
-        else if (key == "Elbow") {
+        else if (key == "______") {
           writeServoValues(2, valueInt);           
         }         
-        else if (key == "Wrist_rotation") {
+        else if (key == "_______") {
           writeServoValues(3, valueInt);     
         }   
       }
