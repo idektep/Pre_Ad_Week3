@@ -41,8 +41,8 @@ std::vector<ServoPins> servoPins =
 {
   { 0, "Base", 90},
   { 1, "_____", 90},
-  { ___, "Elbow", 90},
-  { ___, "Wrist_rotation", 90},
+  { ___, "____", ___},
+  { ___, "Wrist_rotation", ___},
 };
 
 // Structure to store recorded steps for playback
